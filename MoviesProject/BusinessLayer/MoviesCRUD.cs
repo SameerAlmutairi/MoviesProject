@@ -16,7 +16,7 @@ namespace MoviesProject.BusinessLayer
         // GET ALL Movies OR Get Movie By ID
         public List<Movie> GetAll(int? id = null)
         {
-            return id !=null ? ExcuteReader( Queries.SelectMovieByIdQuery, id) : ExcuteReader(Queries.SelectMoviesAllQuery);
+            return id !=null ? ExcuteReader(Queries.SelectMovieByIdQuery, id) : ExcuteReader(Queries.SelectAllMoviesQuery);
         }
 
 

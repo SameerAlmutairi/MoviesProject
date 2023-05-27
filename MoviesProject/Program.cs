@@ -17,31 +17,31 @@ namespace MoviesProject
 
 
             #region Get All Movies
-            //Console.WriteLine("Get All Movies ");
-            //var movies = MovieOp.GetAll();
-            //foreach (var movie in movies)
-            //{
-            //    Console.Write(movie.Id);
-            //    Console.Write(movie.Name);
-            //    Console.Write(movie.Description);
-            //    Console.Write(movie.Publish_date);
-            //    Console.Write(movie.Director_Id);
-            //    Console.WriteLine(movie.Rating_Id);
-            //}
-            //#endregion
-            //Console.WriteLine("-----------------------------");
-            //Console.WriteLine("Get Movie by ID");
-            //#region Get Movie by ID
-            //var movieById = MovieOp.GetAll(4);
-            //foreach (var movie in movieById)
-            //{
-            //    Console.Write(movie.Id);
-            //    Console.Write(movie.Name);
-            //    Console.Write(movie.Description);
-            //    Console.Write(movie.Publish_date);
-            //    Console.Write(movie.Director_Id);
-            //    Console.WriteLine(movie.Rating_Id);
-            //}
+            Console.WriteLine("Get All Movies ");
+            var movies = MovieOp.GetAll();
+            foreach (var movie in movies)
+            {
+                Console.Write(movie.Id);
+                Console.Write(movie.Name);
+                Console.Write(movie.Description);
+                Console.Write(movie.Publish_date);
+                Console.Write(movie.Director_Id);
+                Console.WriteLine(movie.Rating_Id);
+            }
+            #endregion
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Get Movie by ID");
+            #region Get Movie by ID
+            var movieById = MovieOp.GetAll(5);
+            foreach (var movie in movieById)
+            {
+                Console.Write(movie.Id);
+                Console.Write(movie.Name);
+                Console.Write(movie.Description);
+                Console.Write(movie.Publish_date);
+                Console.Write(movie.Director_Id);
+                Console.WriteLine(movie.Rating_Id);
+            }
             #endregion
 
             #region Update Movie 
@@ -70,8 +70,8 @@ namespace MoviesProject
             #endregion
 
             #region Delete Movie
-            int movie_id = 4;
-            MovieOp.DeleteMovie(movie_id);
+            //int movie_id = 4;
+            //MovieOp.DeleteMovie(movie_id);
             #endregion
 
 

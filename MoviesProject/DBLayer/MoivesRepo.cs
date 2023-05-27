@@ -24,14 +24,13 @@ namespace MoviesProject.DBLayer
             if (id != null)
             {
                 cmd.Parameters.AddWithValue("@id", id);
-                return ReadEntity(cmd.ExecuteReader(), id);
             }
             return ReadEntity(cmd.ExecuteReader());
 
         }
 
         // Read Movie
-        public List<Movie> ReadEntity(SqlDataReader rdr, int? id = null)
+        public List<Movie> ReadEntity(SqlDataReader rdr)
         {
             var list = new List<Movie>();
 
@@ -123,7 +122,6 @@ namespace MoviesProject.DBLayer
             sqlCommand.Parameters.AddWithValue("@isDeleted", true);
             int rowsAffected = sqlCommand.ExecuteNonQuery();
             return rowsAffected;
-
         }
         #endregion
     }

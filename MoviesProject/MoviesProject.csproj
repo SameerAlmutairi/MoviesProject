@@ -55,6 +55,8 @@
     <Compile Include="Entities\Director.cs" />
     <Compile Include="Entities\Movie.cs" />
     <Compile Include="Entities\Rating.cs" />
+    <Compile Include="PresentationLayer\Admin.cs" />
+    <Compile Include="PresentationLayer\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
